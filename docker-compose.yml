@@ -1,0 +1,13 @@
+services:
+  janus:
+    build: .
+    container_name: janus-gateway-DK
+    ports:
+      - "8088:8088"
+      - "7088:7088"
+    volumes:
+      - ./config/janus.jcfg:/etc/janus/janus.jcfg:ro
+      - ./config/streaming.jcfg:/etc/janus/streaming.jcfg:ro
+      - ./config/:/etc/janus/
+      - ./logs:/var/log
+    restart: always

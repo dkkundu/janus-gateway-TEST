@@ -1,0 +1,293 @@
+
+general: {
+	#admin_key = "supersecret"		# If set, mountpoints can be created via API
+									# only if this key is provided in the request
+	#rtp_port_range = "20000-40000"	# Range of ports to use for RTP/RTCP when '0' is
+									# passed as port for a mountpoint (default=10000-60000)
+	#events = false					# Whether events should be sent to event
+									# handlers (default=true)
+
+	# By default, integers are used as a unique ID for both mountpoints. In case
+	# you want to use strings instead (e.g., a UUID), set string_ids to true.
+	#string_ids = true
+}
+
+
+stream-1: {
+    type = "mjpg"
+    id = 1
+    description = "Camera 1"
+    url = "http://ssl:ssl@1234@192.168.45.32/cgi-bin/mjpg/video.cgi?channel=1&subtype=1"
+    enabled = yes
+    rtsp_user = "ssl"
+    rtsp_pwd = "ssl@1234"
+}
+
+# Stream 2 - Camera 2
+stream-2: {
+    type = "mjpg"
+    id = 2
+    description = "Camera 2"
+    url = "http://ssl:ssl@1234@192.168.45.35/cgi-bin/mjpg/video.cgi?channel=1&subtype=1"
+    enabled = yes
+    rtsp_user = "ssl"
+    rtsp_pwd = "ssl@1234"
+}
+
+# Stream 3 - Camera 3
+stream-3: {
+    type = "mjpg"
+    id = 3
+    description = "Camera 3"
+    url = "http://ssl:ssl@1234@192.168.45.34/cgi-bin/mjpg/video.cgi?channel=1&subtype=1"
+    enabled = yes
+    rtsp_user = "ssl"
+    rtsp_pwd = "ssl@1234"
+}
+
+# Stream 4 - Camera 4
+stream-4: {
+    type = "mjpg"
+    id = 4
+    description = "Camera 4"
+    url = "http://ssl:ssl@1234@192.168.45.36/cgi-bin/mjpg/video.cgi?channel=1&subtype=1"
+    enabled = yes
+    rtsp_user = "ssl"
+    rtsp_pwd = "ssl@1234"
+}
+
+# Stream 5 - Camera 5
+stream-5: {
+    type = "mjpg"
+    id = 5
+    description = "Camera 5"
+    url = "http://ssl:ssl@1234@192.168.45.98/cgi-bin/mjpg/video.cgi?channel=1&subtype=1"
+    enabled = yes
+    rtsp_user = "ssl"
+    rtsp_pwd = "ssl@1234"
+}
+
+# Stream 6 - Camera 6
+stream-6: {
+    type = "mjpg"
+    id = 6
+    description = "Camera 6"
+    url = "http://ssl:ssl@1234@192.168.45.93/cgi-bin/mjpg/video.cgi?channel=1&subtype=1"
+    enabled = yes
+    rtsp_user = "ssl"
+    rtsp_pwd = "ssl@1234"
+}
+
+# Stream 7 - Camera 7
+stream-7: {
+    type = "mjpg"
+    id = 7
+    description = "Camera 7"
+    url = "http://ssl:ssl@1234@192.168.45.49/cgi-bin/mjpg/video.cgi?channel=1&subtype=1"
+    enabled = yes
+    rtsp_user = "ssl"
+    rtsp_pwd = "ssl@1234"
+}
+
+# Stream 8 - Camera 8
+stream-8: {
+    type = "mjpg"
+    id = 8
+    description = "Camera 8"
+    url = "http://ssl:ssl@1234@192.168.45.95/cgi-bin/mjpg/video.cgi?channel=1&subtype=1"
+    enabled = yes
+    rtsp_user = "ssl"
+    rtsp_pwd = "ssl@1234"
+}
+
+# Stream 9 - Camera 9
+stream-9: {
+    type = "mjpg"
+    id = 9
+    description = "Camera 9"
+    url = "http://ssl:ssl@1234@192.168.45.96/cgi-bin/mjpg/video.cgi?channel=1&subtype=1"
+    enabled = yes
+    rtsp_user = "ssl"
+    rtsp_pwd = "ssl@1234"
+}
+
+# Stream 10 - Camera 10
+stream-10: {
+    type = "mjpg"
+    id = 10
+    description = "Camera 10"
+    url = "http://ssl:ssl@1234@192.168.45.97/cgi-bin/mjpg/video.cgi?channel=1&subtype=1"
+    enabled = yes
+    rtsp_user = "ssl"
+    rtsp_pwd = "ssl@1234"
+}
+
+# Stream 11 - Camera 11
+stream-11: {
+    type = "mjpg"
+    id = 11
+    description = "Camera 11"
+    url = "http://ssl:ssl@1234@192.168.45.47/cgi-bin/mjpg/video.cgi?channel=1&subtype=1"
+    enabled = yes
+    rtsp_user = "ssl"
+    rtsp_pwd = "ssl@1234"
+}
+
+# Stream 12 - Camera 12
+stream-12: {
+    type = "mjpg"
+    id = 12
+    description = "Camera 12"
+    url = "http://ssl:ssl@1234@192.168.45.48/cgi-bin/mjpg/video.cgi?channel=1&subtype=1"
+    enabled = yes
+    rtsp_user = "ssl"
+    rtsp_pwd = "ssl@1234"
+}
+
+# Stream 13 - Camera 13
+stream-13: {
+    type = "mjpg"
+    id = 13
+    description = "Camera 13"
+    url = "http://ssl:ssl@1234@192.168.45.50/cgi-bin/mjpg/video.cgi?channel=1&subtype=1"
+    enabled = yes
+    rtsp_user = "ssl"
+    rtsp_pwd = "ssl@1234"
+}
+
+# Stream 14 - Camera 14
+stream-14: {
+    type = "mjpg"
+    id = 14
+    description = "Camera 14"
+    url = "http://ssl:ssl@1234@192.168.45.43/cgi-bin/mjpg/video.cgi?channel=1&subtype=1"
+    enabled = yes
+    rtsp_user = "ssl"
+    rtsp_pwd = "ssl@1234"
+}
+
+# Stream 15 - Camera 15
+stream-15: {
+    type = "mjpg"
+    id = 15
+    description = "Camera 15"
+    url = "http://ssl:ssl@1234@192.168.45.45/cgi-bin/mjpg/video.cgi?channel=1&subtype=1"
+    enabled = yes
+    rtsp_user = "ssl"
+    rtsp_pwd = "ssl@1234"
+}
+
+# Stream 16 - Camera 16
+stream-16: {
+    type = "mjpg"
+    id = 16
+    description = "Camera 16"
+    url = "http://ssl:ssl@1234@192.168.45.44/cgi-bin/mjpg/video.cgi?channel=1&subtype=1"
+    enabled = yes
+    rtsp_user = "ssl"
+    rtsp_pwd = "ssl@1234"
+}
+
+# Stream 17 - Camera 17
+stream-17: {
+    type = "mjpg"
+    id = 17
+    description = "Camera 17"
+    url = "http://ssl:ssl@1234@192.168.45.201/cgi-bin/mjpg/video.cgi?channel=1&subtype=1"
+    enabled = yes
+    rtsp_user = "ssl"
+    rtsp_pwd = "ssl@1234"
+}
+
+# Stream 18 - Camera 18
+stream-18: {
+    type = "mjpg"
+    id = 18
+    description = "Camera 18"
+    url = "http://ssl:ssl@1234@192.168.45.205/cgi-bin/mjpg/video.cgi?channel=1&subtype=1"
+    enabled = yes
+    rtsp_user = "ssl"
+    rtsp_pwd = "ssl@1234"
+}
+
+# Stream 19 - Camera 19
+stream-19: {
+    type = "mjpg"
+    id = 19
+    description = "Camera 19"
+    url = "http://ssl:ssl@1234@192.168.45.206/cgi-bin/mjpg/video.cgi?channel=1&subtype=1"
+    enabled = yes
+    rtsp_user = "ssl"
+    rtsp_pwd = "ssl@1234"
+}
+
+# Stream 20 - Camera 20
+stream-20: {
+    type = "mjpg"
+    id = 20
+    description = "Camera 20"
+    url = "http://ssl:ssl@1234@192.168.45.203/cgi-bin/mjpg/video.cgi?channel=1&subtype=1"
+    enabled = yes
+    rtsp_user = "ssl"
+    rtsp_pwd = "ssl@1234"
+}
+
+# Stream 21 - Camera 21
+stream-21: {
+    type = "mjpg"
+    id = 21
+    description = "Camera 21"
+    url = "http://ssl:ssl@1234@192.168.45.68/cgi-bin/mjpg/video.cgi?channel=1&subtype=1"
+    enabled = yes
+    rtsp_user = "ssl"
+    rtsp_pwd = "ssl@1234"
+}
+
+# Stream 22 - Camera 22
+stream-22: {
+    type = "mjpg"
+    id = 22
+    description = "Camera 22"
+    url = "http://ssl:ssl@1234@192.168.45.65/cgi-bin/mjpg/video.cgi?channel=1&subtype=1"
+    enabled = yes
+    rtsp_user = "ssl"
+    rtsp_pwd = "ssl@1234"
+}
+
+# Stream 23 - Camera 23
+stream-23: {
+    type = "mjpg"
+    id = 23
+    description = "Camera 23"
+    url = "http://ssl:ssl@1234@192.168.45.80/cgi-bin/mjpg/video.cgi?channel=1&subtype=1"
+    enabled = yes
+    rtsp_user = "ssl"
+    rtsp_pwd = "ssl@1234"
+}
+
+# Stream 24 - Camera 24
+stream-24: {
+    type = "mjpg"
+    id = 24
+    description = "Camera 24"
+    url = "http://admin:admin123@192.168.45.74/cgi-bin/mjpg/video.cgi?channel=1&subtype=1"
+    enabled = yes
+    rtsp_user = "admin"
+    rtsp_pwd = "admin123"
+}
+
+# Stream 25 - Camera 25
+stream-25: {
+    type = "mjpg"
+    id = 25
+    description = "Camera 25"
+    url = "http://ssl:ssl@1234@192.168.45.69/cgi-bin/mjpg/video.cgi?channel=1&subtype=1"
+    enabled = yes
+    rtsp_user = "ssl"
+    rtsp_pwd = "ssl@1234"
+}
+
+# Stream 26 - Camera 26
+stream-26
+
+

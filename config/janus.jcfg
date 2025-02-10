@@ -1,0 +1,58 @@
+# General configuration
+general: {
+	configs_folder = "/etc/janus"
+	plugins_folder = "/usr/local/lib/janus/plugins"
+	transports_folder = "@transportdir@"	# Keep default transports folder
+	events_folder = "/usr/local/lib/janus/events"
+	loggers_folder = "@loggerdir@"			# Keep default loggers folder
+
+	# Logging configuration
+	log_to_file = "/var/log/janus.log"
+	debug_level = 4
+
+	# Security
+	protected_folders = [
+		"/bin", "/boot", "/dev", "/etc", "/initrd", "/lib", "/lib32", "/lib64",
+		"/proc", "/sbin", "/sys", "/usr", "/var",
+		"/opt/janus/bin", "/opt/janus/etc", "/opt/janus/include",
+		"/opt/janus/lib", "/opt/janus/lib32", "/opt/janus/lib64", "/opt/janus/sbin"
+	]
+}
+
+# NAT configuration
+nat: {
+	# STUN server
+	stun_server = "103.26.139.29"
+	stun_port = 9443
+
+	# TURN server
+	turn_server = "103.26.139.29"
+	turn_port = 9443
+	turn_type = "udp"
+	turn_user = "dipto_kumar"
+	turn_pwd = "dk#passwd001"
+
+	ice_ignore_list = "vmnet"
+}
+
+# Plugin configuration
+plugins: {
+	disable = "libjanus_sip.so"  # Disable SIP plugin
+}
+
+# Note: These need separate transport config files
+# 1. Create/update /etc/janus/janus.transport.http.jcfg with:
+#    http: {
+#        enabled = true
+#        port = 8088
+#        admin_port = 7088
+#    }
+#
+# 2. Create/update /etc/janus/janus.transport.websockets.jcfg with:
+#    websockets: {
+#        enabled = true
+#        port = 8188
+#    }
+
+# Streaming plugin (configure in /etc/janus/janus.plugin.streaming.jcfg)
+# Keep existing /etc/janus/streaming.jcfg and ensure plugin is enabled
