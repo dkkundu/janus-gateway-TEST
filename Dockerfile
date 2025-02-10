@@ -70,7 +70,7 @@ RUN chown -R root:root /etc/janus /usr/local/lib/janus/loggers /etc/recordingsdi
 RUN chmod -R 755 /etc/janus /usr/local/lib/janus/loggers /etc/recordingsdir
 
 # Copy Janus Gateway source code
-COPY ./janus_gateway_code /opt/janus-gateway
+COPY ./janus_gateway_back /opt/janus-gateway
 COPY . /opt/janus-gateway
 COPY config/janus.jcfg /usr/local/etc/janus/janus.jcfg
 
